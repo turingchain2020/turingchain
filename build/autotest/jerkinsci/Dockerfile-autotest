@@ -1,0 +1,9 @@
+FROM ubuntu:16.04
+
+WORKDIR /root
+COPY turingchain ./
+COPY turingchain-cli ./
+COPY autotest ./
+COPY *.toml ./
+
+CMD ["/root/turingchain", "-f" , "turingchain.test.toml"]

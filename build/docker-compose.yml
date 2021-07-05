@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  turingchain:
+    build:
+      context: .
+
+  chain32:
+    build:
+      context: .
+    command: ["/root/turingchain", "-f", "/root/turingchain-solo.toml"]
+
+  chain31:
+    build:
+      context: .
+    command: ["/root/turingchain", "-f", "/root/turingchain-solo.toml"]
+
+  chain30:
+    build:
+      context: .
+    command: ["/root/turingchain", "-f", "/root/turingchain-solo.toml"]
+
+  chain29:
+    build:
+      context: .
+    command: ["/root/turingchain", "-f", "/root/turingchain-solo.toml"]
+
+  chain28:
+    build:
+      context: .
+    command: ["/root/turingchain", "-f", "/root/turingchain-solo.toml"]
